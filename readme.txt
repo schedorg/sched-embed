@@ -84,6 +84,9 @@ If you don't specify this, the title of the event page will be used.
 
 == Changelog ==
 
+= 1.1.1 =
+* Sched.org taking over the ownership over plugin.
+
 = 1.1 =
 * Allow any event page from sched.org to be embedded.
 
