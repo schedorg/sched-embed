@@ -87,6 +87,9 @@ If you don't specify this, the title of the event page will be used.
 = 1.1.2 =
 * Version bump
 
+= 1.1.2 =
+* Version bump
+
 = 1.1.1 =
 * Sched.org taking over the ownership over plugin.
 
