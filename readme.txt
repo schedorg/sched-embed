@@ -6,15 +6,15 @@ Tested up to: 4.6
 Stable tag: trunk
 License: GPL v2 or later
 
-Embed event content from sched.com into your WordPress site.
+Embed event content from sched.org into your WordPress site.
 
 == Description ==
 
-This plugin provides a shortcode which allows you to embed event content from sched.com into your WordPress site.
+This plugin provides a shortcode which allows you to embed event content from sched.org into your WordPress site.
 
-Due to WordPress security restrictions, Authors and Contributors on your site will be unable to use the standard embed code provided by sched.com. If you use WordPress Multisite then nobody on your site will be able to use the standard embed code at all. This plugin allows you to embed event content from sched.com using a simple shortcode instead.
+Due to WordPress security restrictions, Authors and Contributors on your site will be unable to use the standard embed code provided by sched.org. If you use WordPress Multisite then nobody on your site will be able to use the standard embed code at all. This plugin allows you to embed event content from sched.org using a simple shortcode instead.
 
-Embedding event content into your WordPress site requires a paid account on sched.com. [View available plans here.](http://sched.com/plans)
+Embedding event content into your WordPress site requires a paid account on sched.org. [View available plans here.](http://sched.org/plans)
 
 Plugin development was sponsored by [Internet Retailing](http://internetretailing.net).
 
@@ -36,6 +36,7 @@ Embed content from your sched.com event by adding the following shortcode to you
 `[sched url="http://example.sched.com/"]`
 
 Replace `http://example.sched.com/` with the URL of the event page you wish to embed. You can use the URL of any page of your event on sched.com. Simply copy the URL of the page from sched.com and paste it into your shortcode.
+
 
 == Frequently Asked Questions ==
 
