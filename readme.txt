@@ -87,14 +87,6 @@ If you don't specify this, the title of the event page will be used.
 = 1.1.2 =
 * Version bump
 
-= 1.1.3 =
-* Made the compiled URL schemaless (//)
-* Domain changes (sched.org -> sched.com)
-* Allow `[sched.com]` to be used as the shortcode
-
-= 1.1.2 =
-* Version bump
-
 = 1.1.1 =
 * Sched.com taking over the ownership over plugin.
 
