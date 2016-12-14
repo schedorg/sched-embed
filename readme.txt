@@ -16,6 +16,7 @@ Due to WordPress security restrictions, Authors and Contributors on your site wi
 
 Embedding event content into your WordPress site requires a paid account on sched.org. [View available plans here.](http://sched.org/plans)
 
+
 Plugin development was sponsored by [Internet Retailing](http://internetretailing.net).
 
 == Installation ==
