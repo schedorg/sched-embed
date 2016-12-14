@@ -3,11 +3,7 @@
 Plugin Name:  Sched Embed
 Description:  Embed event content from sched.org into your WordPress site
 Plugin URI:   https://github.com/cftp/sched-embed
-<<<<<<< HEAD
-Version:      1.1.2
-=======
 Version:      1.1.3
->>>>>>> 3371a2f39b1a956baf295e1cae8836a8493673f1
 Author:       <a href="http://codeforthepeople.com/">Code for the People</a> | Development sponsored by <a href="http://internetretailing.net/">Internet Retailing</a>
 Text Domain:  sched-embed
 Domain Path:  /languages/
@@ -44,10 +40,7 @@ class Sched_Embed_Plugin {
 		add_action( 'init',         array( $this, 'load_textdomain' ) );
 		add_shortcode( 'sched',     array( $this, 'do_shortcode' ) );
 		add_shortcode( 'sched.org', array( $this, 'do_shortcode' ) );
-<<<<<<< HEAD
-=======
-    add_shortcode( 'sched.com', array( $this, 'do_shortcode' ) );
->>>>>>> 3371a2f39b1a956baf295e1cae8836a8493673f1
+		add_shortcode( 'sched.com', array( $this, 'do_shortcode' ) );
 
 	}
 
@@ -193,13 +186,8 @@ class Sched_Embed_Shortcode {
 	 */
 	function get_output() {
 		
-<<<<<<< HEAD
-		if ( !$this->get_att( 'url' ) or ( false === strpos( $this->get_att( 'url' ), '.sched.org' ) ) ) {
-			return new WP_Error( 'invalid_url', __( 'Sched Embed: Your shortcode should contain a sched.org URL.', 'sched-embed' ) );
-=======
 		if ( !$this->get_att( 'url' ) or ( false === strpos( $this->get_att( 'url' ), '.sched.com' ) ) ) {
 			return new WP_Error( 'invalid_url', __( 'Sched Embed: Your shortcode should contain a sched.com URL.', 'sched-embed' ) );
->>>>>>> 3371a2f39b1a956baf295e1cae8836a8493673f1
 		}
 		
 		if ( ! is_null( $this->get_att( 'width' ) ) and ( 990 < $this->get_att( 'width' ) || 500 > $this->get_att( 'width' ) ) ) {
@@ -249,11 +237,7 @@ class Sched_Embed_Shortcode {
 		// Clean up the URL, just in case there's 
 		// stuff in there we don't need.
 		$url = esc_url_raw( $this->atts['url'] );
-<<<<<<< HEAD
-		$this->base_url = parse_url( $url, PHP_URL_SCHEME ) . '://' . parse_url( $url, PHP_URL_HOST );
-=======
 		$this->base_url = '//' . parse_url( $url, PHP_URL_HOST );
->>>>>>> 3371a2f39b1a956baf295e1cae8836a8493673f1
 
 		if ( $suffix )
 			$this->url = $this->base_url . $suffix;
