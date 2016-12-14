@@ -3,14 +3,13 @@
 Plugin Name:  Sched Embed
 Description:  Embed event content from sched.org into your WordPress site
 Plugin URI:   https://github.com/cftp/sched-embed
-Version:      1.1.2
+Version:      1.0.1
 Author:       <a href="http://codeforthepeople.com/">Code for the People</a> | Development sponsored by <a href="http://internetretailing.net/">Internet Retailing</a>
 Text Domain:  sched-embed
 Domain Path:  /languages/
 License:      GPL v2 or later
 
 Copyright © 2013 Code for the People Ltd
-Copyright © 2016 Sched LLC
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -68,7 +67,7 @@ class Sched_Embed_Plugin {
 
 		if ( is_wp_error( $output ) ) {
 			if ( current_user_can( 'edit_post', get_the_ID() ) )
-				return sprintf( '<strong>%s</strong>', $output->get_error_message() );
+				return $output->get_error_message();
 			else
 				return '';
 		}
@@ -109,6 +108,7 @@ class Sched_Embed_Shortcode {
 
 		$this->atts = shortcode_atts( array(
 			'url'        => null,
+			'view'       => 'default',
 			'width'      => null,
 			'sidebar'    => true,
 			'background' => null,
@@ -186,18 +186,19 @@ class Sched_Embed_Shortcode {
 	function get_output() {
 		
 		if ( !$this->get_att( 'url' ) or ( false === strpos( $this->get_att( 'url' ), '.sched.org' ) ) ) {
-			return new WP_Error( 'invalid_url', __( 'Sched Embed: Your shortcode should contain a sched.org URL.', 'sched-embed' ) );
+			return new WP_Error( 'invalid_url', sprintf( '<strong>%s</strong>',
+				__( 'Sched Embed: Your shortcode should contain a sched.org URL.', 'sched-embed' )
+			) );
 		}
 		
-		if ( ! is_null( $this->get_att( 'width' ) ) and ( 990 < $this->get_att( 'width' ) || 500 > $this->get_att( 'width' ) ) ) {
-			return new WP_Error( 'invalid_width', __( 'Sched Embed: If you specify a width, it should be between 500 and 990.', 'sched-embed' ) );
+		if ( ! is_null( $this->get_att( 'width' ) ) and ( 900 < $this->get_att( 'width' ) || 500 > $this->get_att( 'width' ) ) ) {
+			if ( current_user_can( 'edit_post', $this->get_post()->ID ) )
+				return sprintf( '<strong>%s</strong>', __( 'Sched Embed: If you specify a width, it should be between 500 and 900.', 'sched-embed' ) );
+			else
+				return '';
 		}
 
 		switch ( $this->get_att( 'view' ) ) {
-
-			case 'schedule':
-				$suffix = '/';
-				break;
 
 			case 'expanded':
 				$suffix = '/list/descriptions';
@@ -228,7 +229,7 @@ class Sched_Embed_Shortcode {
 				break;
 
 			default:
-				$suffix = false;
+				$suffix = '/';
 				break;
 
 		}
@@ -236,12 +237,10 @@ class Sched_Embed_Shortcode {
 		// Clean up the URL, just in case there's 
 		// stuff in there we don't need.
 		$url = esc_url_raw( $this->atts['url'] );
-		$this->base_url = parse_url( $url, PHP_URL_SCHEME ) . '://' . parse_url( $url, PHP_URL_HOST );
+		$url = parse_url( $url, PHP_URL_SCHEME ) . '://' . parse_url( $url, PHP_URL_HOST );
+		$this->base_url = $url;
 
-		if ( $suffix )
-			$this->url = $this->base_url . $suffix;
-		else
-			$this->url = $url;
+		$this->url = $this->base_url . $suffix;
 
 		if ( empty( $this->content ) )
 			$this->content = esc_html( $this->fetch_title() );
