@@ -2,7 +2,7 @@
 Contributors: sched, codeforthepeople, johnbillion, simonwheatley
 Tags: sched, sched.org, sched.com, embed, shortcode
 Requires at least: 3.4
-Tested up to: 4.6
+Tested up to: 4.7
 Stable tag: trunk
 License: GPL v2 or later
 
