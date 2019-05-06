@@ -1,4 +1,4 @@
-=== Sched Embed ===
+=== Embed Sched ===
 Contributors: sched, codeforthepeople, johnbillion, simonwheatley
 Tags: sched, sched.org, sched.com, embed, shortcode
 Requires at least: 3.4
@@ -23,8 +23,8 @@ Plugin development was sponsored by [Internet Retailing](http://internetretailin
 You can install this plugin directly from your WordPress dashboard:
 
  1. Go to the *Plugins* menu and click *Add New*.
- 2. Search for *Sched Embed*.
- 3. Click *Install Now* next to the *Sched Embed* plugin.
+ 2. Search for *Embed Sched*.
+ 3. Click *Install Now* next to the *Embed Sched* plugin.
  4. Activate the plugin.
 
 Alternatively, see the guide to [Manually Installing Plugins](http://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation).
