@@ -3,7 +3,7 @@
 Plugin Name:  Embed Sched
 Description:  Embed event content from sched.org into your WordPress site
 Plugin URI:   https://github.com/schedorg/sched-embed
-Version:      1.1.4 
+Version:      1.1.4
 Author:       <a href="http://codeforthepeople.com/">Code for the People</a> | Development sponsored by <a href="http://internetretailing.net/">Internet Retailing</a>
 Text Domain:  embed-sched
 Domain Path:  /languages/
