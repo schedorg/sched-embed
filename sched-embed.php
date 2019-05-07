@@ -40,7 +40,7 @@ class Sched_Embed_Plugin {
 		add_action( 'init',         array( $this, 'load_textdomain' ) );
 		add_shortcode( 'sched',     array( $this, 'do_shortcode' ) );
 		add_shortcode( 'sched.org', array( $this, 'do_shortcode' ) );
-    add_shortcode( 'sched.com', array( $this, 'do_shortcode' ) );
+		add_shortcode( 'sched.com', array( $this, 'do_shortcode' ) );
 
 	}
 
