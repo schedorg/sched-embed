@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name:  Sched Embed
+Plugin Name:  Embed Sched
 Description:  Embed event content from sched.org into your WordPress site
-Plugin URI:   https://github.com/cftp/sched-embed
+Plugin URI:   https://github.com/schedorg/sched-embed
 Version:      1.1.4
 Author:       <a href="http://codeforthepeople.com/">Code for the People</a> | Development sponsored by <a href="http://internetretailing.net/">Internet Retailing</a>
-Text Domain:  sched-embed
+Text Domain:  embed-sched
 Domain Path:  /languages/
 License:      GPL v2 or later
 
@@ -51,7 +51,7 @@ class Sched_Embed_Plugin {
 	 * @return null
 	 */
 	public function load_textdomain() {
-		load_plugin_textdomain( 'sched-embed', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+		load_plugin_textdomain( 'embed-sched', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	}
 
 	/**
@@ -187,11 +187,11 @@ class Sched_Embed_Shortcode {
 	function get_output() {
 		
 		if ( !$this->get_att( 'url' ) or ( false === strpos( $this->get_att( 'url' ), '.sched.com' ) ) ) {
-			return new WP_Error( 'invalid_url', __( 'Sched Embed: Your shortcode should contain a sched.com URL.', 'sched-embed' ) );
+			return new WP_Error( 'invalid_url', __( 'Embed Sched: Your shortcode should contain a sched.com URL.', 'embed-sched' ) );
 		}
 		
 		if ( ! is_null( $this->get_att( 'width' ) ) and ( 990 < $this->get_att( 'width' ) || 500 > $this->get_att( 'width' ) ) ) {
-			return new WP_Error( 'invalid_width', __( 'Sched Embed: If you specify a width, it should be between 500 and 990.', 'sched-embed' ) );
+			return new WP_Error( 'invalid_width', __( 'Embed Sched: If you specify a width, it should be between 500 and 990.', 'embed-sched' ) );
 		}
 
 		switch ( $this->get_att( 'view' ) ) {
@@ -263,14 +263,14 @@ class Sched_Embed_Shortcode {
 			$attributes .= sprintf( ' %s="%s"', $k, esc_attr( $v ) );
 
 		wp_enqueue_script(
-			'sched-embed',
+			'embed-sched',
 			sprintf( '%s/js/embed.js', $this->base_url ),
 			array(),
 			null,
 			true
 		);
 
-		return sprintf( '<a id="sched-embed" href="%s"%s>%s</a>',
+		return sprintf( '<a id="embed-sched" href="%s"%s>%s</a>',
 			esc_url( $this->url ),
 			$attributes,
 			$this->content
