@@ -2,7 +2,7 @@
 Contributors: sched, codeforthepeople, johnbillion, simonwheatley
 Tags: sched, sched.org, embed, shortcode
 Requires at least: 3.4
-Tested up to: 3.5
+Tested up to: 4.6
 Stable tag: trunk
 License: GPL v2 or later
 
@@ -83,6 +83,9 @@ If you don't specify this, the title of the event page will be used.
 * Allow any event page from sched.org to be embedded.
 
 == Changelog ==
+
+= 1.1.2 =
+* Version bump
 
 = 1.1.1 =
 * Sched.org taking over the ownership over plugin.
