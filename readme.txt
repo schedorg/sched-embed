@@ -1,7 +1,7 @@
 === Embed Sched ===
 Contributors: sched, codeforthepeople, johnbillion, simonwheatley
 Tags: sched, sched.org, sched.com, embed, shortcode
-Requires at least: 3.4
+Requires at least: 3.4 
 Tested up to: 5.1
 Stable tag: trunk
 License: GPL v2 or later
