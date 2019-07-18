@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name:  Embed Sched
-Description:  Embed event content from sched.org into your WordPress site
+Description:  Embed event content from sched.com into your WordPress site
 Plugin URI:   https://github.com/schedorg/sched-embed
-Version:      1.1.4
-Author:       <a href="http://codeforthepeople.com/">Code for the People</a> | Development sponsored by <a href="http://internetretailing.net/">Internet Retailing</a>
+Version:      1.1.5
+Author:       <a href="https://sched.com/">Sched.com</a>
 Text Domain:  embed-sched
 Domain Path:  /languages/
 License:      GPL v2 or later
@@ -270,7 +270,7 @@ class Sched_Embed_Shortcode {
 			true
 		);
 
-		return sprintf( '<a id="embed-sched" href="%s"%s>%s</a>',
+		return sprintf( '<a id="sched-embed" href="%s"%s>%s</a>',
 			esc_url( $this->url ),
 			$attributes,
 			$this->content
