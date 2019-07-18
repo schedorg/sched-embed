@@ -84,6 +84,9 @@ If you don't specify this, the title of the event page will be used.
 
 == Changelog ==
 
+= 1.1.5 =
+* Bug fix which prevented the schedule from showing up
+
 = 1.1.4 =
 * Tested on latest WP version
 
