@@ -84,8 +84,11 @@ If you don't specify this, the title of the event page will be used.
 
 == Changelog ==
 
+= 1.1.7 =
+* Tested on latest WP version (5.3). Readme updates.
+
 = 1.1.6 =
-* Tested on latest WP version (5.3)
+* Tested on latest WP version (5.2.2)
 
 = 1.1.5 =
 * Bug fix which prevented the schedule from showing up
