@@ -2,7 +2,7 @@
 Contributors: schedllc, codeforthepeople, johnbillion, simonwheatley
 Tags: sched, sched.org, sched.com, embed, shortcode
 Requires at least: 3.4 
-Tested up to: 5.2.2
+Tested up to: 5.3
 Stable tag: trunk
 License: GPL v2 or later
 
@@ -85,7 +85,7 @@ If you don't specify this, the title of the event page will be used.
 == Changelog ==
 
 = 1.1.6 =
-* Tested on latest WP version (5.2.2)
+* Tested on latest WP version (5.3)
 
 = 1.1.5 =
 * Bug fix which prevented the schedule from showing up
