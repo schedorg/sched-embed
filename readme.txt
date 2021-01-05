@@ -2,7 +2,7 @@
 Contributors: schedllc, codeforthepeople, johnbillion, simonwheatley
 Tags: sched, sched.org, sched.com, embed, shortcode
 Requires at least: 3.4 
-Tested up to: 5.3
+Tested up to: 5.6
 Stable tag: trunk
 License: GPL v2 or later
 
@@ -83,6 +83,9 @@ If you don't specify this, the title of the event page will be used.
 * Allow any event page from sched.com to be embedded.
 
 == Changelog ==
+
+= 1.1.8 =
+* Tested on latest WP version (5.6)
 
 = 1.1.7 =
 * Tested on latest WP version (5.3). Readme updates.
