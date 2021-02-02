@@ -10,7 +10,7 @@ Easily manage and promote events! Complete with mobile apps, multiple event cale
 
 == Description ==
 
-#### BRING YOUR EVENTS TOGETHER.
+### BRING YOUR EVENTS TOGETHER.
 
 Sched is a full-featured and flexible event management plugin for your unique events. 
 
@@ -24,7 +24,7 @@ Easily create and manage a schedule of events, speakers, sponsors and others wit
 - [Video Tutorials](https://sched.com/support/guide/video-tutorials/)
 - [More Resources...](https://resources.sched.com/main-resource)
 
-#### WHAT YOU CAN DO
+### WHAT YOU CAN DO
 
 1. Build, customize, and publish your event details in one organized place.
 2. Beautifully display your event agenda, speaker directory and key sponsor branding.
@@ -33,7 +33,7 @@ Easily create and manage a schedule of events, speakers, sponsors and others wit
 5. Collaborate with your team. Work together remotely and in real-time. 
 6. Market and grow your event via our web and native apps.
 
-#### KEY FEATURES
+### KEY FEATURES
 - Scheduling
 - Branded mobile app
 - Attendee management
@@ -118,7 +118,6 @@ If you don't specify this, the title of the event page will be used.
 
 == Screenshots ==
 
-1. An embedded event schedule
 
 == Upgrade Notice ==
 
