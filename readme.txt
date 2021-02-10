@@ -14,11 +14,11 @@ Easily manage and promote events! Complete with mobile apps, multiple event cale
 
 Sched is a full-featured and flexible event management plugin for your unique events. 
 
-Easily create and manage a schedule of events, speakers, sponsors and others with The [Sched Event Management Software](http://sched.com/) plugin. Whether your events are in-person or virtual events, this plugin boasts professional features backed by our world-class team of developers and designers.
+Easily create and manage a schedule of events, speakers, sponsors and others with The [Sched Event Management Software](https://sched.com/wordpress/?utm_campaign=wordpress&utm_medium=plugin&utm_source=wordpress) plugin. Whether your events are in-person or virtual events, this plugin boasts professional features backed by our world-class team of developers and designers.
 
 [vimeo https://vimeo.com/451827763]
 
-- [Demo](https://sched.com/)
+- [Demo](https://sched.com/wordpress/?utm_campaign=wordpress&utm_medium=plugin&utm_source=wordpress)
 - [Test For Free](https://sched.com/signup)
 - [Documentation](https://sched.com/support/)
 - [Video Tutorials](https://sched.com/support/guide/video-tutorials/)
