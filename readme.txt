@@ -2,7 +2,7 @@
 Contributors: schedllc, codeforthepeople, johnbillion, simonwheatley
 Tags: event, events, event management, event manager, calendar
 Requires at least: 3.4 
-Tested up to: 5.7
+Tested up to: 5.9
 Stable tag: trunk
 License: GPL v2 or later
 
@@ -125,6 +125,9 @@ If you don't specify this, the title of the event page will be used.
 * Allow any event page from sched.com to be embedded.
 
 == Changelog ==
+
+= 1.1.11 =
+* Tested on latest WP version (5.9)
 
 = 1.1.10 =
 * Tested on latest WP version (5.7)
